@@ -56,7 +56,7 @@
 /* LABEL`s HTML */
 
 body {
-    background-image: url('/API-Aemet-Fetch/img/diseno-brujula_1174-3.jpg');
+    background-image: url('./img/diseno-brujula_1174-3.jpg');
     background-repeat: no-repeat;
     background-position: top;
     padding: 5%;
