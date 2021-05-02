@@ -1,6 +1,3 @@
-////////////////////API AEMET////////////////////////
-//Fetch activa Apis
-
 
 const urlActivacion = "https://opendata.aemet.es/opendata/api/observacion/convencional/datos/estacion/1210X/?api_key=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKb3NlbWFyaWFfMTk4NEBob3RtYWlsLmVzIiwianRpIjoiMzA3ODNiYjAtYTYyOC00NjczLTg1NmItNTU4ZTVkNDA0MmI2IiwiaXNzIjoiQUVNRVQiLCJpYXQiOjE2MTg2NzgzNDAsInVzZXJJZCI6IjMwNzgzYmIwLWE2MjgtNDY3My04NTZiLTU1OGU1ZDQwNDJiNiIsInJvbGUiOiIifQ.x0vKmuTRHWXmmJJwCReHzz7XXJjJQk9oLKUXaOUuHIk";
 fetch(urlActivacion)
