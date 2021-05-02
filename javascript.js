@@ -3,7 +3,7 @@ const urlActivacion = "https://opendata.aemet.es/opendata/api/observacion/conven
 fetch(urlActivacion)
     .then(response => response.json())
     .then(data => data)
-    .catch(error => console.log(error));
+    .catch(error => error);
 
 
 const CantabricoActiva = 'https://opendata.aemet.es/opendata/api/prediccion/maritima/costera/costa/41/?api_key=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKb3NlbWFyaWFfMTk4NEBob3RtYWlsLmVzIiwianRpIjoiMzA3ODNiYjAtYTYyOC00NjczLTg1NmItNTU4ZTVkNDA0MmI2IiwiaXNzIjoiQUVNRVQiLCJpYXQiOjE2MTg2NzgzNDAsInVzZXJJZCI6IjMwNzgzYmIwLWE2MjgtNDY3My04NTZiLTU1OGU1ZDQwNDJiNiIsInJvbGUiOiIifQ.x0vKmuTRHWXmmJJwCReHzz7XXJjJQk9oLKUXaOUuHIk';
