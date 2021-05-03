@@ -102,8 +102,8 @@ fetch(cabo)
             //Funcion colores segun Viento
             function colorViento() {
                 let windSpeed = parseInt((data[3].vv) * 3.6);
-                windSpeed = 37;
-                console.log(windSpeed);
+                
+                //console.log(windSpeed);
                 divverde = document.getElementById('vMediaViento');
                 if (windSpeed >= 0 || windSpeed >= 17) {
 
