@@ -1,12 +1,12 @@
 
-const urlActivacion = "https://opendata.aemet.es/opendata/api/observacion/convencional/datos/estacion/1210X/?api_key=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKb3NlbWFyaWFfMTk4NEBob3RtYWlsLmVzIiwianRpIjoiMzA3ODNiYjAtYTYyOC00NjczLTg1NmItNTU4ZTVkNDA0MmI2IiwiaXNzIjoiQUVNRVQiLCJpYXQiOjE2MTg2NzgzNDAsInVzZXJJZCI6IjMwNzgzYmIwLWE2MjgtNDY3My04NTZiLTU1OGU1ZDQwNDJiNiIsInJvbGUiOiIifQ.x0vKmuTRHWXmmJJwCReHzz7XXJjJQk9oLKUXaOUuHIk";
+var urlActivacion = "https://opendata.aemet.es/opendata/api/observacion/convencional/datos/estacion/1210X/?api_key=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKb3NlbWFyaWFfMTk4NEBob3RtYWlsLmVzIiwianRpIjoiMzA3ODNiYjAtYTYyOC00NjczLTg1NmItNTU4ZTVkNDA0MmI2IiwiaXNzIjoiQUVNRVQiLCJpYXQiOjE2MTg2NzgzNDAsInVzZXJJZCI6IjMwNzgzYmIwLWE2MjgtNDY3My04NTZiLTU1OGU1ZDQwNDJiNiIsInJvbGUiOiIifQ.x0vKmuTRHWXmmJJwCReHzz7XXJjJQk9oLKUXaOUuHIk";
 fetch(urlActivacion)
     .then(response => response.json())
     .then(data => data)
     .catch(error => error);
 
 
-const CantabricoActiva = 'https://opendata.aemet.es/opendata/api/prediccion/maritima/costera/costa/41/?api_key=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKb3NlbWFyaWFfMTk4NEBob3RtYWlsLmVzIiwianRpIjoiMzA3ODNiYjAtYTYyOC00NjczLTg1NmItNTU4ZTVkNDA0MmI2IiwiaXNzIjoiQUVNRVQiLCJpYXQiOjE2MTg2NzgzNDAsInVzZXJJZCI6IjMwNzgzYmIwLWE2MjgtNDY3My04NTZiLTU1OGU1ZDQwNDJiNiIsInJvbGUiOiIifQ.x0vKmuTRHWXmmJJwCReHzz7XXJjJQk9oLKUXaOUuHIk';
+var CantabricoActiva = 'https://opendata.aemet.es/opendata/api/prediccion/maritima/costera/costa/41/?api_key=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKb3NlbWFyaWFfMTk4NEBob3RtYWlsLmVzIiwianRpIjoiMzA3ODNiYjAtYTYyOC00NjczLTg1NmItNTU4ZTVkNDA0MmI2IiwiaXNzIjoiQUVNRVQiLCJpYXQiOjE2MTg2NzgzNDAsInVzZXJJZCI6IjMwNzgzYmIwLWE2MjgtNDY3My04NTZiLTU1OGU1ZDQwNDJiNiIsInJvbGUiOiIifQ.x0vKmuTRHWXmmJJwCReHzz7XXJjJQk9oLKUXaOUuHIk';
 fetch(CantabricoActiva)
     .then(response => response.json())
     .then(data => data)
@@ -16,7 +16,7 @@ fetch(CantabricoActiva)
 
 
 //Funcion general que Dibuja datos de Dato Cabo peñas
-const cabo = 'https://opendata.aemet.es/opendata/sh/5d70fbff?api_key=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKb3NlbWFyaWFfMTk4NEBob3RtYWlsLmVzIiwianRpIjoiMzA3ODNiYjAtYTYyOC00NjczLTg1NmItNTU4ZTVkNDA0MmI2IiwiaXNzIjoiQUVNRVQiLCJpYXQiOjE2MTg2NzgzNDAsInVzZXJJZCI6IjMwNzgzYmIwLWE2MjgtNDY3My04NTZiLTU1OGU1ZDQwNDJiNiIsInJvbGUiOiIifQ.x0vKmuTRHWXmmJJwCReHzz7XXJjJQk9oLKUXaOUuHIk';
+var cabo = 'https://opendata.aemet.es/opendata/sh/5d70fbff?api_key=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKb3NlbWFyaWFfMTk4NEBob3RtYWlsLmVzIiwianRpIjoiMzA3ODNiYjAtYTYyOC00NjczLTg1NmItNTU4ZTVkNDA0MmI2IiwiaXNzIjoiQUVNRVQiLCJpYXQiOjE2MTg2NzgzNDAsInVzZXJJZCI6IjMwNzgzYmIwLWE2MjgtNDY3My04NTZiLTU1OGU1ZDQwNDJiNiIsInJvbGUiOiIifQ.x0vKmuTRHWXmmJJwCReHzz7XXJjJQk9oLKUXaOUuHIk';
 fetch(cabo)
     .then(response => response.json())
     .then(data => {
@@ -145,7 +145,7 @@ fetch(cabo)
 //Funcion que realiza fetch y dibuja los datos en pantalla
 function addParteMar() {
 
-    const marCantabrico = 'https://opendata.aemet.es/opendata/sh/a2ff5ac0?api_key=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKb3NlbWFyaWFfMTk4NEBob3RtYWlsLmVzIiwianRpIjoiMzA3ODNiYjAtYTYyOC00NjczLTg1NmItNTU4ZTVkNDA0MmI2IiwiaXNzIjoiQUVNRVQiLCJpYXQiOjE2MTg2NzgzNDAsInVzZXJJZCI6IjMwNzgzYmIwLWE2MjgtNDY3My04NTZiLTU1OGU1ZDQwNDJiNiIsInJvbGUiOiIifQ.x0vKmuTRHWXmmJJwCReHzz7XXJjJQk9oLKUXaOUuHIk';
+    var marCantabrico = 'https://opendata.aemet.es/opendata/sh/a2ff5ac0?api_key=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKb3NlbWFyaWFfMTk4NEBob3RtYWlsLmVzIiwianRpIjoiMzA3ODNiYjAtYTYyOC00NjczLTg1NmItNTU4ZTVkNDA0MmI2IiwiaXNzIjoiQUVNRVQiLCJpYXQiOjE2MTg2NzgzNDAsInVzZXJJZCI6IjMwNzgzYmIwLWE2MjgtNDY3My04NTZiLTU1OGU1ZDQwNDJiNiIsInJvbGUiOiIifQ.x0vKmuTRHWXmmJJwCReHzz7XXJjJQk9oLKUXaOUuHIk';
     fetch(marCantabrico)
         .then(res => res.json())
         .then(datoMar => {
