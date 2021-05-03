@@ -10,7 +10,7 @@ var CantabricoActiva = 'https://opendata.aemet.es/opendata/api/prediccion/mariti
 fetch(CantabricoActiva)
     .then(response => response.json())
     .then(data => data)
-    .catch(error => console.log(error));
+    .catch(error => error);
 
 
 
@@ -139,7 +139,7 @@ fetch(cabo)
 
     })
 
-.catch(error => console.log(error));
+.catch(error => error);
 
 
 //Funcion que realiza fetch y dibuja los datos en pantalla
@@ -161,7 +161,7 @@ function addParteMar() {
              `;
             return document.getElementById("partemaritimo").innerHTML = plantillaMar;
         })
-        .catch(error => console.log(error));
+        .catch(error => error);
 };
 addParteMar();
 
