@@ -112,7 +112,7 @@ fetch(cabo)
 
                 } else if (windSpeed >= 18 || windSpeed >= 34) {
 
-                    divverde.style.color = 'greeyellow';
+                    divverde.style.color = 'greenyellow';
 
                     divverde.innerHTML = `<b>Velocidad Viento: ${(data[3].vv)*3.6} km/h</b>`;
                 } else if (windSpeed >= 35 || windSpeed >= 50) {
