@@ -107,7 +107,7 @@ fetch(cabo)
                 divverde = document.getElementById('vMediaViento');
                 if (windSpeed >= 0 || windSpeed >= 18) {
 
-                    divverde.style.color = 'green';
+                    divverde.style.color = 'LightGreen';
                     divverde.innerHTML = `<b>Velocidad Viento: ${(data[3].vv)*3.6} km/h</b>`;
 
                 } else if (windSpeed >= 18 || windSpeed >= 34) {
