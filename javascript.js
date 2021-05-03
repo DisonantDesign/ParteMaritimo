@@ -105,17 +105,17 @@ fetch(cabo)
                 let x;
                 //console.log(windSpeed);
                 divverde = document.getElementById('vMediaViento');
-                if (windSpeed >= 0 || windSpeed >= 25) {
+                if (windSpeed >= 0 || windSpeed >= 18) {
 
                     divverde.style.color = 'green';
                     divverde.innerHTML = `<b>Velocidad Viento: ${(data[3].vv)*3.6} km/h</b>`;
 
-                } else if (windSpeed >= 26 || windSpeed >= 39) {
+                } else if (windSpeed >= 18 || windSpeed >= 34) {
 
                     divverde.style.color = 'greeyellow';
 
                     divverde.innerHTML = `<b>Velocidad Viento: ${(data[3].vv)*3.6} km/h</b>`;
-                } else if (windSpeed >= 40 || windSpeed >= 55) {
+                } else if (windSpeed >= 35 || windSpeed >= 55) {
 
                     divverde.style.color = 'yellow';
 
